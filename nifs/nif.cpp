@@ -1,14 +1,14 @@
 ﻿/*********************************************************************************
  * Curso de Programación 1. Tema 11 (Registros)
  * Autores: Miguel Ángel Latre y Javier Martínez
- * Última revisión: 14 de noviembre de 2019
+ * Última revisión: 19 de noviembre de 2019
  * Resumen: Fichero de implementación «nif.cpp» del módulo «nif».
  * Codificación de caracteres original de este fichero: UTF-8 con BOM
 \********************************************************************************/
 
-#include "nif.h"
 #include <iostream>
 #include <iomanip>
+#include "nif.h"
 using namespace std;
 
 /*
