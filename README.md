@@ -1,4 +1,4 @@
-# Caracteres y cadenas de caracteres
+# Registros
 
 Código de las transparencias del tema 11 (registros) de la asignatura Programación 1. Escuela de Ingeniería y Arquitectura de la Universidad de Zaragoza.
 
