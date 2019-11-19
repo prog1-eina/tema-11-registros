@@ -16,7 +16,6 @@
 #include <cstring>
 #include <iostream>
 #include "persona.h"
-#include "fechas.h"
 using namespace std;
 
 
@@ -32,7 +31,7 @@ void nombreCompleto(const Persona p, char cadena[]) {
 
 /*
  * Pre:  ---
- * Post: Ha mostrado los datos del ciudadano «c» en la pantalla.
+ * Post: Ha mostrado los datos de la persona «p» en la pantalla.
  */
 void mostrar(const Persona p) {
     char marcaGenero = 'o';
@@ -56,8 +55,8 @@ void mostrar(const Persona p) {
 
 /*
  * Pre:  ---
- * Post: Ha devuelto «true» si y solo si la fecha de nacimiento del «ciudadano1»
- *       es estrictamente anterior a la fecha de nacimiento del «ciudadano2».
+ * Post: Ha devuelto «true» si y solo si la fecha de nacimiento de «persona1»
+ *       es estrictamente anterior a la fecha de nacimiento de «persona2».
  */
 bool esMayorQue(const Persona persona1, const Persona persona2) {
     return esAnterior(persona1.nacimiento, persona2.nacimiento);

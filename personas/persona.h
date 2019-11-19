@@ -11,8 +11,8 @@
  * lista de inclusión de ficheros de interfaz.
 \********************************************************************************/
 
-#ifndef CIUDADANO_INCLUDED_H
-#define CIUDADANO_INCLUDED_H
+#ifndef PERSONA_INCLUDED_H
+#define PERSONA_INCLUDED_H
 
 #include "nif.h"
 #include "fecha.h"
@@ -20,8 +20,8 @@
 /*
  * Longitudes máximas del nombre y los apellidos de una persona
  */
-const int MAX_LONG_NOMBRE = 24;
-const int MAX_LONG_APELLIDOS = 24;
+const int MAX_LONG_NOMBRE = 48;
+const int MAX_LONG_APELLIDOS = 48;
 
 /*
  * Definición del tipo de dato Persona que representa la información relevante
@@ -54,9 +54,9 @@ void mostrar(const Persona p);
 
 /*
  * Pre:  ---
- * Post: Ha devuelto «true» si y solo si la fecha de nacimiento del «persona1»
- *       es estrictamente anterior a la fecha de nacimiento del «persona2».
+ * Post: Ha devuelto «true» si y solo si la fecha de nacimiento de «persona1»
+ *       es estrictamente anterior a la fecha de nacimiento de «persona2».
  */
 bool esMayorQue(const Persona persona1, const Persona persona2);
 
-#endif // CIUDADANO_INCLUDED_H
+#endif // PERSONA_INCLUDED_H
