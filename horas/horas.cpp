@@ -58,8 +58,8 @@ int segundosTotales(const Hora h) {
  * Post: Ha devuelto la cantidad de tiempo transcurrida entre «horaAnterior» y
  *       «horaPosterior», expresada en segundos.
  */
-int calcularTiempoTranscurrido(const Hora horaAnterior,
-                               const Hora horaPosterior) {
+int tiempoTranscurrido(const Hora horaAnterior,
+                       const Hora horaPosterior) {
     return segundosTotales(horaPosterior) - segundosTotales(horaAnterior);
 }
 

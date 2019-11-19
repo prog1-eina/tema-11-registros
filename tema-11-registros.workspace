@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="tema-11-registros" Database="" Version="10.0.0">
-  <Project Name="01-nifs" Path="nifs/nifs.project" Active="No"/>
+  <Project Name="01-nifs" Path="nifs/nifs.project" Active="Yes"/>
   <Project Name="02-horas" Path="horas/horas.project" Active="No"/>
-  <Project Name="03-personas" Path="personas/personas.project" Active="Yes"/>
+  <Project Name="03-personas" Path="personas/personas.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

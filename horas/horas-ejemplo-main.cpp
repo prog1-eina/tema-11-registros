@@ -24,7 +24,7 @@ int main() {
     mostrar(h2);
     cout << endl;
 
-    cout << calcularTiempoTranscurrido(h1, h2) << endl;
+    cout << tiempoTranscurrido(h1, h2) << endl;
     
     return 0;
 }
