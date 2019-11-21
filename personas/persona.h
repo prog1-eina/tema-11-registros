@@ -42,14 +42,14 @@ const int MAX_LONG_APELLIDOS = 48;
  * Pre:  ---
  * Post: Ha asignado a «cadena» el nombre completo del persona «p».
  */
-void nombreCompleto(const Persona p, char cadena[]);
+void nombreCompleto(const Persona& p, char cadena[]);
 
 
 /*
  * Pre:  ---
  * Post: Ha mostrado los datos del persona «p» en la pantalla.
  */
-void mostrar(const Persona p);
+void mostrar(const Persona& p);
 
 
 /*
@@ -57,6 +57,6 @@ void mostrar(const Persona p);
  * Post: Ha devuelto «true» si y solo si la fecha de nacimiento de «persona1»
  *       es estrictamente anterior a la fecha de nacimiento de «persona2».
  */
-bool esMayorQue(const Persona persona1, const Persona persona2);
+bool esMayorQue(const Persona& persona1, const Persona& persona2);
 
 #endif // PERSONA_INCLUDED_H

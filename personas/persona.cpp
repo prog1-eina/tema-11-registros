@@ -23,7 +23,7 @@ using namespace std;
  * Pre:  ---
  * Post: Ha asignado a «cadena» el nombre completo de la persona «p».
  */
-void nombreCompleto(const Persona p, char cadena[]) {
+void nombreCompleto(const Persona& p, char cadena[]) {
     strcpy(cadena, p.nombre);
     strcat(cadena, " ");
     strcat(cadena, p.apellidos);
@@ -33,7 +33,7 @@ void nombreCompleto(const Persona p, char cadena[]) {
  * Pre:  ---
  * Post: Ha mostrado los datos de la persona «p» en la pantalla.
  */
-void mostrar(const Persona p) {
+void mostrar(const Persona& p) {
     char marcaGenero = 'o';
     if (p.esMujer) {
         marcaGenero = 'a';
@@ -58,7 +58,7 @@ void mostrar(const Persona p) {
  * Post: Ha devuelto «true» si y solo si la fecha de nacimiento de «persona1»
  *       es estrictamente anterior a la fecha de nacimiento de «persona2».
  */
-bool esMayorQue(const Persona persona1, const Persona persona2) {
+bool esMayorQue(const Persona& persona1, const Persona& persona2) {
     return esAnterior(persona1.nacimiento, persona2.nacimiento);
 }
 
