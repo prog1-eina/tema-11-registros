@@ -9,7 +9,7 @@
 
 #include <iostream>
 #include <cstring>
-#include "persona.h"
+#include "persona.hpp"
 using namespace std;
 
 /*

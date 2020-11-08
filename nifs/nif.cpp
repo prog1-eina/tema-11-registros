@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include "nif.h"
+#include "nif.hpp"
 using namespace std;
 
 /*

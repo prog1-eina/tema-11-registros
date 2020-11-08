@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include "horas.h"
+#include "horas.hpp"
 using namespace std;
 
 /*

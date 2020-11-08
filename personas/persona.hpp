@@ -14,8 +14,8 @@
 #ifndef PERSONA_INCLUDED_H
 #define PERSONA_INCLUDED_H
 
-#include "nif.h"
-#include "fecha.h"
+#include "nif.hpp"
+#include "fecha.hpp"
 
 /*
  * Longitudes máximas del nombre y los apellidos de una persona

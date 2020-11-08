@@ -7,7 +7,7 @@
 \********************************************************************************/
 
 #include <iostream>
-#include "fecha.h"
+#include "fecha.hpp"
 using namespace std;
 
 /*
