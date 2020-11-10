@@ -5,7 +5,7 @@
  * Resumen: Fichero de interfaz «nif.hpp» del módulo «nif».
 \******************************************************************************/
 
-#pragma once
+//#pragma once
 
 /*
  * Definición del tipo de dato Nif que representa la información del NIF
