@@ -1,7 +1,7 @@
 ﻿/********************************************************************************\
  * Curso de Programación 1. Tema 11 (Registros)
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 15 de noviembre de 2019
+ * Última revisión: 10 de noviembre de 2020
  * Resumen: Fichero de interfaz «persona.h» del módulo «persona».
  * Codificación de caracteres original de este fichero: UTF-8 con BOM
  * Dependencias: - módulo «nif», ubicado en el directorio del proyecto «nifs» de
@@ -11,17 +11,12 @@
  * lista de inclusión de ficheros de interfaz.
 \********************************************************************************/
 
-#ifndef PERSONA_INCLUDED_H
-#define PERSONA_INCLUDED_H
+#pragma once
 
+#include <string>
 #include "nif.hpp"
 #include "fecha.hpp"
-
-/*
- * Longitudes máximas del nombre y los apellidos de una persona
- */
-const int MAX_LONG_NOMBRE = 48;
-const int MAX_LONG_APELLIDOS = 48;
+using namespace std;
 
 /*
  * Definición del tipo de dato Persona que representa la información relevante
@@ -29,8 +24,7 @@ const int MAX_LONG_APELLIDOS = 48;
  * de nacimiento, estado civil y sexo
  */
  struct Persona {
-     char nombre[MAX_LONG_NOMBRE];
-     char apellidos[MAX_LONG_APELLIDOS];
+     string nombre, apellidos;
      Nif nif;
      Fecha nacimiento;
      bool estaCasado;
@@ -40,14 +34,15 @@ const int MAX_LONG_APELLIDOS = 48;
 
 /*
  * Pre:  ---
- * Post: Ha asignado a «cadena» el nombre completo del persona «p».
+ * Post: Ha devuelto una cadena que representa el nombre completo de la 
+ *       persona «p».
  */
-void nombreCompleto(const Persona& p, char cadena[]);
+string nombreCompleto(const Persona& p);
 
 
 /*
  * Pre:  ---
- * Post: Ha mostrado los datos del persona «p» en la pantalla.
+ * Post: Ha mostrado los datos de la persona «p» en la pantalla.
  */
 void mostrar(const Persona& p);
 
@@ -58,5 +53,3 @@ void mostrar(const Persona& p);
  *       es estrictamente anterior a la fecha de nacimiento de «persona2».
  */
 bool esMayorQue(const Persona& persona1, const Persona& persona2);
-
-#endif // PERSONA_INCLUDED_H

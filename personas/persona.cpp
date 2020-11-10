@@ -1,7 +1,7 @@
 ﻿/********************************************************************************
  * Curso de Programación 1. Tema 11 (Registros)
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 15 de noviembre de 2019
+ * Última revisión: 10 de noviembre de 2020
  * Resumen: Fichero de implementación «persona.cpp» del módulo «persona».
  * Codificación de caracteres original de este fichero: UTF-8 con BOM
  * Dependencias: - módulo «nif», ubicado en el directorio del proyecto «nifs» de
@@ -13,7 +13,6 @@
  * volver a compilar este proyecto.
 \********************************************************************************/
 
-#include <cstring>
 #include <iostream>
 #include "persona.hpp"
 using namespace std;
@@ -21,12 +20,11 @@ using namespace std;
 
 /*
  * Pre:  ---
- * Post: Ha asignado a «cadena» el nombre completo de la persona «p».
+ * Post: Ha devuelto una cadena que representa el nombre completo de la 
+ *       persona «p».
  */
-void nombreCompleto(const Persona& p, char cadena[]) {
-    strcpy(cadena, p.nombre);
-    strcat(cadena, " ");
-    strcat(cadena, p.apellidos);
+string nombreCompleto(const Persona& p) {
+    return p.nombre + " " + p.apellidos;
 }
 
 /*
@@ -39,9 +37,7 @@ void mostrar(const Persona& p) {
         marcaGenero = 'a';
     }
 
-    char cadenaNombreCompleto[MAX_LONG_NOMBRE + MAX_LONG_APELLIDOS];
-    nombreCompleto(p, cadenaNombreCompleto);
-    cout << "Persona: " << cadenaNombreCompleto << endl;
+    cout << "Persona: " << nombreCompleto(p) << endl;
     cout << "NIF: "; mostrar(p.nif); cout << endl;
     cout << "Nacid" << marcaGenero << " el "; mostrar(p.nacimiento); cout << endl;
     if (p.estaCasado) {
