@@ -1,11 +1,11 @@
 ﻿/******************************************************************************\
  * Curso de Programación 1. Tema 11 (Registros)
  * Autores: Miguel Ángel Latre y Javier Martínez
- * Última revisión: 14 de noviembre de 2019
+ * Última revisión: 10 de noviembre de 2020
  * Resumen: Fichero de interfaz «nif.hpp» del módulo «nif».
 \******************************************************************************/
 
-//#pragma once
+#pragma once
 
 /*
  * Definición del tipo de dato Nif que representa la información del NIF
