@@ -16,10 +16,10 @@ using namespace std;
  * Post: Ha devuelto la letra del número de identificación fiscal que corresponde
  *       a un número de documento nacional de identidad igual a «dni».
  */
-char calcularLetra(const int dni) {
+char calcularLetra(const unsigned int dni) {
     const int NUM_LETRAS = 23;
-    const char TABLA_NIF[NUM_LETRAS + 1] = "TRWAGMYFPDXBNJZSQVHLCKE";
-    return TABLA_NIF[dni % NUM_LETRAS];
+    const string TABLA_NIF = "TRWAGMYFPDXBNJZSQVHLCKE";
+    return TABLA_NIF.at(dni % NUM_LETRAS);
 }
 
 /*
