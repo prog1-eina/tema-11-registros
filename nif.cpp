@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cctype>
 #include "nif.hpp"
 using namespace std;
 
@@ -27,7 +28,7 @@ char calcularLetra(const unsigned int dni) {
  *       decir, su letra es la que le corresponde a su DNI.
  */
 bool esValido(const Nif nifAValidar) {
-    return calcularLetra(nifAValidar.dni) == nifAValidar.letra;
+    return calcularLetra(nifAValidar.dni) == toupper(nifAValidar.letra);
 }
 
 
