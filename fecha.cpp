@@ -1,10 +1,9 @@
-﻿/********************************************************************************
+﻿/******************************************************************************\
  * Curso de Programación 1. Tema 11 (Registros)
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 13 de noviembre de 2018
  * Resumen: Fichero de implementación «fecha.cpp» del módulo «fecha».
- * Codificación de caracteres original de este fichero: UTF-8 con BOM
-\********************************************************************************/
+\******************************************************************************/
 
 #include <iostream>
 #include "fecha.hpp"

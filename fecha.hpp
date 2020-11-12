@@ -1,14 +1,11 @@
-﻿/********************************************************************************\
+﻿/******************************************************************************\
  * Curso de Programación 1. Tema 11 (Registros)
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 13 de noviembre de 2018
- * Resumen: Fichero de interfaz «fecha.h» del módulo «fecha».
- * Codificación de caracteres original de este fichero: UTF-8 con BOM
- * Directorio en el que ubicarlo: Programacion1/Biblioteca/
-\********************************************************************************/
+ * Última revisión: 12 de noviembre de 2020
+ * Resumen: Fichero de interfaz «fecha.hpp» del módulo «fecha».
+\******************************************************************************/
 
-#ifndef TIPO_FECHA_INCLUDED_H
-#define TIPO_FECHA_INCLUDED_H
+#pragma once
 
 /*
  * Definición del tipo de dato Fecha
@@ -32,6 +29,4 @@ void mostrar(const Fecha f);
  *       «f2».
  */
 bool esAnterior(const Fecha f1, const Fecha f2);
-
-#endif   // TIPO_FECHA_INCLUDED_H
 

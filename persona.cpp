@@ -1,17 +1,9 @@
-﻿/********************************************************************************
+﻿/******************************************************************************\
  * Curso de Programación 1. Tema 11 (Registros)
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 10 de noviembre de 2020
+ * Última revisión: 12 de noviembre de 2020
  * Resumen: Fichero de implementación «persona.cpp» del módulo «persona».
- * Codificación de caracteres original de este fichero: UTF-8 con BOM
- * Dependencias: - módulo «nif», ubicado en el directorio del proyecto «nifs» de
- *                 este área de trabajo.
- *               - módulo «fecha», ubicado en el directorio de este proyecto.
- * El proyecto ha sido configurado para incluir las ubicaciones anteriores en la
- * lista de inclusión de ficheros de interfaz. Puede modificarse en «Project
- * settings» si no coincidieran con las ubicaciones del equipo en el que se quiera
- * volver a compilar este proyecto.
-\********************************************************************************/
+\******************************************************************************/
 
 #include <iostream>
 #include "persona.hpp"

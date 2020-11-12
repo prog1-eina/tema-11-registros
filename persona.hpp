@@ -1,15 +1,9 @@
-﻿/********************************************************************************\
+﻿/******************************************************************************\
  * Curso de Programación 1. Tema 11 (Registros)
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 10 de noviembre de 2020
- * Resumen: Fichero de interfaz «persona.h» del módulo «persona».
- * Codificación de caracteres original de este fichero: UTF-8 con BOM
- * Dependencias: - módulo «nif», ubicado en el directorio del proyecto «nifs» de
- *                 este área de trabajo.
- *               - módulo «fecha», ubicado en el directorio de este proyecto.
- * El proyecto ha sido configurado para incluir las ubicaciones anteriores en la
- * lista de inclusión de ficheros de interfaz.
-\********************************************************************************/
+ * Última revisión: 12 de noviembre de 2020
+ * Resumen: Fichero de interfaz «persona.hpp» del módulo «persona».
+\******************************************************************************/
 
 #pragma once
 
