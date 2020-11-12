@@ -1,23 +1,28 @@
 {
     "tasks": [
-        {
-            "type": "cppbuild",
-            "label": "Compilar el fichero activo (válido solo para programas contenidos en un solo fichero)",
-            "command": "g++",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}"
-            ],
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-        },
+        {
+            "label": "Compilar programa «personas»",
+            "type": "shell",
+            "command": "make",
+            "windows": {
+                "command": "mingw32-make.exe",
+            },
+            "args": [
+                "personas"
+            ],
+            "problemMatcher": ["$gcc"],
+            "group": "build",
+        },
+        {
+            "label": "Ejecutar programa «personas»",
+            "type": "shell",
+            "command": "./personas",
+            "windows": {
+                "command": "chcp 65001 ; .\\personas.exe",
+            },
+            "dependsOn": "Compilar programa «personas»",
+            "problemMatcher": ["$gcc"],
+        },            
         {
             "label": "Compilar programa «nifs»",
             "type": "shell",
