@@ -17,7 +17,7 @@ using namespace std;
  *       a un número de documento nacional de identidad igual a «dni».
  */
 char calcularLetra(const unsigned int dni) {
-    const int NUM_LETRAS = 23;
+    const unsigned int NUM_LETRAS = 23;
     const string TABLA_NIF = "TRWAGMYFPDXBNJZSQVHLCKE";
     return TABLA_NIF.at(dni % NUM_LETRAS);
 }

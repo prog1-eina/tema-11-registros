@@ -11,7 +11,7 @@
  * Definición del tipo de dato Fecha
  */
 struct Fecha {
-    int dia, mes, agno;
+    unsigned int dia, mes, agno;
 };
 
 
@@ -22,8 +22,8 @@ struct Fecha {
 void mostrar(const Fecha f);
 
 /*
- * Pre:  Los valores de los parámetros «f1» y «f2» representan fechas válidas del
- *       calendario gregoriano.
+ * Pre:  Los valores de los parámetros «f1» y «f2» representan fechas válidas 
+ *       del calendario gregoriano.
  * Post: Ha devuelto true si y solo si la fecha representada por el valor
  *       del parámetro «f1» es cronológiamente anterior a la representada por
  *       «f2».

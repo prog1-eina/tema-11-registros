@@ -22,7 +22,7 @@ struct Nif {
  * Post: Ha devuelto la letra del número de identificación fiscal que corresponde
  *       a un número de documento nacional de identidad igual a «dni».
  */
-char calcularLetra(const unsigned dni);
+char calcularLetra(const unsigned int dni);
 
 
 /*
