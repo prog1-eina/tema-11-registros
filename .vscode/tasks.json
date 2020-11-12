@@ -1,0 +1,46 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Compilar el fichero activo (válido solo para programas contenidos en un solo fichero)",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "Compilar programa «nifs»",
+            "type": "shell",
+            "command": "make",
+            "windows": {
+                "command": "mingw32-make.exe",
+            },
+            "args": [
+                "nifs"
+            ],
+            "problemMatcher": ["$gcc"],
+            "group": "build",
+        },
+        {
+            "label": "Ejecutar programa «nifs»",
+            "type": "shell",
+            "command": "./nifs",
+            "windows": {
+                "command": "chcp 65001 ; .\\nifs.exe",
+            },
+            "dependsOn": "Compilar programa «nifs»",
+            "problemMatcher": ["$gcc"],
+        },
+    ],
+    "version": "2.0.0"
+}
