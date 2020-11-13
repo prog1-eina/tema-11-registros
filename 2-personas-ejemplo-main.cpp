@@ -58,7 +58,7 @@ int main() {
     princesa.nombre = "Leonor";
     princesa.apellidos = "Borbón Ortiz";
     princesa.nif = {16, 'Q'};
-    princesa.nacimiento = {19, 6, 2014};
+    princesa.nacimiento = {31, 10, 2005};
     princesa.esMujer = true;
     princesa.estaCasado = false;
     mostrar(princesa);
