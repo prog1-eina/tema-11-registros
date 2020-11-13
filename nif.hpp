@@ -12,7 +12,7 @@
  * (Número de Identificación Fiscal) de una persona.
  */
 struct Nif {
-    unsigned int dni;            // número del DNI de la persona
+    unsigned int dni;   // número del DNI de la persona
     char letra;         // letra asociada al número de DNI anterior
 };
 
