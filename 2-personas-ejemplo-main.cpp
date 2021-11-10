@@ -36,7 +36,6 @@ int main() {
     rey.nacimiento.dia = 30;
     rey.nacimiento.mes = 1;
     rey.nacimiento.agno = 1968;
-    rey.esMujer = false;
     rey.estaCasado = true;
     mostrar(rey);
     cout << endl;
@@ -46,7 +45,6 @@ int main() {
                              "Grecia Dinamarca",  // apellidos
                              {11, 'B'},           //  NIF
                              {2, 11, 1938},       // fecha de nacimiento
-                             true,                // esMujer
                              true                 // estaCasada
     };
     mostrar(reinaEmerita);
@@ -59,7 +57,6 @@ int main() {
     princesa.apellidos = "Borbón Ortiz";
     princesa.nif = {16, 'Q'};
     princesa.nacimiento = {31, 10, 2005};
-    princesa.esMujer = true;
     princesa.estaCasado = false;
     mostrar(princesa);
     cout << endl;

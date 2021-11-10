@@ -5,8 +5,8 @@
  * Resumen: Fichero de implementación «persona.cpp» del módulo «persona».
 \******************************************************************************/
 
-#include <iostream>
 #include "persona.hpp"
+#include <iostream>
 using namespace std;
 
 
@@ -24,19 +24,14 @@ string nombreCompleto(const Persona p) {
  * Post: Ha mostrado los datos de la persona «p» en la pantalla.
  */
 void mostrar(const Persona p) {
-    char marcaGenero = 'o';
-    if (p.esMujer) {
-        marcaGenero = 'a';
-    }
-
     cout << "Persona: " << nombreCompleto(p) << endl;
     cout << "NIF: "; mostrar(p.nif); cout << endl;
-    cout << "Nacid" << marcaGenero << " el "; mostrar(p.nacimiento); cout << endl;
+    cout << "Nacido/a el "; mostrar(p.nacimiento); cout << endl;
     if (p.estaCasado) {
-        cout << "Casad" << marcaGenero << endl;
+        cout << "Casado/a" << endl;
     }
     else {
-        cout << "Solter" << marcaGenero << endl;
+        cout << "Soltero/a" << endl;
     }
 }
 
@@ -49,4 +44,3 @@ void mostrar(const Persona p) {
 bool esMayorQue(const Persona persona1, const Persona persona2) {
     return esAnterior(persona1.nacimiento, persona2.nacimiento);
 }
-

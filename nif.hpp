@@ -12,7 +12,7 @@
  * (Número de Identificación Fiscal) de una persona.
  */
 struct Nif {
-    unsigned int dni;   // número del DNI de la persona
+    unsigned dni;       // número del DNI de la persona
     char letra;         // letra asociada al número de DNI anterior
 };
 
@@ -22,7 +22,7 @@ struct Nif {
  * Post: Ha devuelto la letra del número de identificación fiscal que corresponde
  *       a un número de documento nacional de identidad igual a «dni».
  */
-char calcularLetra(const unsigned int dni);
+//char calcularLetra(const unsigned dni);
 
 
 /*

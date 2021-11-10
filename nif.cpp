@@ -5,10 +5,10 @@
  * Resumen: Fichero de implementación «nif.cpp» del módulo «nif».
 \******************************************************************************/
 
+#include "nif.hpp"
+#include <cctype>
 #include <iostream>
 #include <iomanip>
-#include <cctype>
-#include "nif.hpp"
 using namespace std;
 
 /*
@@ -16,8 +16,8 @@ using namespace std;
  * Post: Ha devuelto la letra del número de identificación fiscal que corresponde
  *       a un número de documento nacional de identidad igual a «dni».
  */
-char calcularLetra(const unsigned int dni) {
-    const unsigned int NUM_LETRAS = 23;
+char calcularLetra(const unsigned dni) {
+    const unsigned NUM_LETRAS = 23;
     const string TABLA_NIF = "TRWAGMYFPDXBNJZSQVHLCKE";
     return TABLA_NIF.at(dni % NUM_LETRAS);
 }

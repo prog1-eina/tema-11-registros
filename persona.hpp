@@ -15,14 +15,13 @@ using namespace std;
 /*
  * Definición del tipo de dato Persona que representa la información relevante
  * de una persona: nombre y apellidos, número de identificación fiscal, fecha
- * de nacimiento, estado civil y sexo
+ * de nacimiento y estado civil
  */
  struct Persona {
-     string nombre, apellidos;
-     Nif nif;
-     Fecha nacimiento;
-     bool estaCasado;
-     bool esMujer;
+    string nombre, apellidos;
+    Nif nif;
+    Fecha nacimiento;
+    bool estaCasado;
 };
 
 

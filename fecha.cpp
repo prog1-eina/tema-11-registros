@@ -5,8 +5,8 @@
  * Resumen: Fichero de implementación «fecha.cpp» del módulo «fecha».
 \******************************************************************************/
 
-#include <iostream>
 #include "fecha.hpp"
+#include <iostream>
 using namespace std;
 
 /*
@@ -25,7 +25,7 @@ void mostrar(const Fecha f) {
  *       los dígitos «aaaa» representan el año de la fecha, los dígitos «mm», el
  *       mes y los dígitos «dd», el día.
  */
-unsigned int componer(const Fecha f) {
+unsigned componer(const Fecha f) {
     return f.agno * 10000 + f.mes * 100 + f.dia;
 }
 
@@ -34,10 +34,9 @@ unsigned int componer(const Fecha f) {
  * Pre:  Los valores de los parámetros «f1» y «f2» representan fechas válidas 
  *       del calendario gregoriano.
  * Post: Ha devuelto true si y solo si la fecha representada por el valor
- *       del parámetro «f1» es cronológiamente anterior a la representada por
+ *       del parámetro «f1» es cronológicamente anterior a la representada por
  *       «f2».
  */
 bool esAnterior(const Fecha f1, const Fecha f2) {
     return componer(f1) < componer(f2);
 }
-
