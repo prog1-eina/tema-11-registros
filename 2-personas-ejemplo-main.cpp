@@ -36,7 +36,7 @@ int main() {
     rey.nacimiento.dia = 30;
     rey.nacimiento.mes = 1;
     rey.nacimiento.agno = 1968;
-    rey.estaCasado = true;
+    rey.estaCasada = true;
     mostrar(rey);
     cout << endl;
 
@@ -57,7 +57,7 @@ int main() {
     princesa.apellidos = "Borbón Ortiz";
     princesa.nif = {16, 'Q'};
     princesa.nacimiento = {31, 10, 2005};
-    princesa.estaCasado = false;
+    princesa.estaCasada = false;
     mostrar(princesa);
     cout << endl;
     

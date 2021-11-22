@@ -21,7 +21,7 @@ using namespace std;
     string nombre, apellidos;
     Nif nif;
     Fecha nacimiento;
-    bool estaCasado;
+    bool estaCasada;
 };
 
 
