@@ -6,52 +6,63 @@
             "command": "osascript -e 'tell application \"Terminal\"\ndo script \"echo hello\"\nend tell'",
             "problemMatcher": []
         },
-        {
-            "label": "Compilar programa «personas»",
-            "type": "shell",
-            "command": "make",
-            "windows": {
-                "command": "mingw32-make.exe",
-            },
-            "args": [
-                "personas"
-            ],
-            "problemMatcher": ["$gcc"],
-            "group": "build",
-        },
-        {
-            "label": "Ejecutar programa «personas»",
-            "type": "shell",
-            "command": "./personas",
-            "windows": {
-                "command": "chcp 65001 ; .\\personas.exe",
-            },
-            "dependsOn": "Compilar programa «personas»",
-            "problemMatcher": ["$gcc"],
-        },            
+        {
+            "label": "Compilar programa «personas»",
+            "type": "shell",
+            "command": "make",
+            "windows": {
+                "command": "mingw32-make.exe"
+            },
+            "args": [
+                "personas"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Ejecutar programa «personas»",
+            "type": "shell",
+            "command": "./personas",
+            "windows": {
+                "command": "chcp 65001 ; .\\personas.exe"
+            },
+            "dependsOn": "Compilar programa «personas»",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
         {
             "label": "Compilar programa «nifs»",
             "type": "shell",
             "command": "make",
             "windows": {
-                "command": "mingw32-make.exe",
+                "command": "mingw32-make.exe"
             },
             "args": [
                 "nifs"
             ],
-            "problemMatcher": ["$gcc"],
-            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
         },
         {
             "label": "Ejecutar programa «nifs»",
             "type": "shell",
             "command": "./nifs",
             "windows": {
-                "command": "chcp 65001 ; .\\nifs.exe",
+                "command": "chcp 65001 ; .\\nifs.exe"
             },
             "dependsOn": "Compilar programa «nifs»",
-            "problemMatcher": ["$gcc"],
-        },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
     ],
     "presentation": {
         "showReuseMessage": true,
