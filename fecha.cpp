@@ -11,7 +11,7 @@ using namespace std;
 
 /*
  * Pre:  ---
- * Post: Ha mostrado la fecha «f» en la pantalla.
+ * Post: Muestra la fecha «f» en la pantalla.
  */
 void mostrar(const Fecha f) {
     cout << f.dia << "-" << f.mes << "-" << f.agno;
@@ -20,7 +20,7 @@ void mostrar(const Fecha f) {
 
 /*
  * Pre:  «f» representa una fecha válida del calendario gregoriano.
- * Post: Ha devuelto un entero que, al ser escrito en base 10, tiene un formato
+ * Post: Devuelve un entero que, al ser escrito en base 10, tiene un formato
  *       de ocho dígitos «aaaammdd» que representa la fecha «dia/mes/agno» donde 
  *       los dígitos «aaaa» representan el año de la fecha, los dígitos «mm», el
  *       mes y los dígitos «dd», el día.
@@ -33,7 +33,7 @@ unsigned componer(const Fecha f) {
 /*
  * Pre:  Los valores de los parámetros «f1» y «f2» representan fechas válidas 
  *       del calendario gregoriano.
- * Post: Ha devuelto true si y solo si la fecha representada por el valor
+ * Post: Devuelve true si y solo si la fecha representada por el valor
  *       del parámetro «f1» es cronológicamente anterior a la representada por
  *       «f2».
  */

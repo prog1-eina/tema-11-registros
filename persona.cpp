@@ -12,7 +12,7 @@ using namespace std;
 
 /*
  * Pre:  ---
- * Post: Ha devuelto una cadena que representa el nombre completo de la 
+ * Post: Devuelve una cadena que representa el nombre completo de la 
  *       persona «p».
  */
 string nombreCompleto(const Persona p) {
@@ -21,7 +21,7 @@ string nombreCompleto(const Persona p) {
 
 /*
  * Pre:  ---
- * Post: Ha mostrado los datos de la persona «p» en la pantalla.
+ * Post: Muestra los datos de la persona «p» en la pantalla.
  */
 void mostrar(const Persona p) {
     cout << "Persona: " << nombreCompleto(p) << endl;
@@ -38,7 +38,7 @@ void mostrar(const Persona p) {
 
 /*
  * Pre:  ---
- * Post: Ha devuelto «true» si y solo si la fecha de nacimiento de «persona1»
+ * Post: Devuelve «true» si y solo si la fecha de nacimiento de «persona1»
  *       es estrictamente anterior a la fecha de nacimiento de «persona2».
  */
 bool esMayorQue(const Persona persona1, const Persona persona2) {

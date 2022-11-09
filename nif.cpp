@@ -13,7 +13,7 @@ using namespace std;
 
 /*
  * Pre:  ---
- * Post: Ha devuelto la letra del número de identificación fiscal que corresponde
+ * Post: Devuelve la letra del número de identificación fiscal que corresponde
  *       a un número de documento nacional de identidad igual a «dni».
  */
 char calcularLetra(const unsigned dni) {
@@ -24,7 +24,7 @@ char calcularLetra(const unsigned dni) {
 
 /*
  * Pre:  ---
- * Post: Ha devuelto «true» si y solo si «nifAValidar» define un NIF válido, es
+ * Post: Devuelve «true» si y solo si «nifAValidar» define un NIF válido, es
  *       decir, su letra es la que le corresponde a su DNI.
  */
 bool esValido(const Nif nifAValidar) {
@@ -34,7 +34,7 @@ bool esValido(const Nif nifAValidar) {
 
 /*
  * Pre:  El valor del parámetro «nifAEscribir» representa un NIF válido.
- * Post: Ha escrito «nifAEscribir» en pantalla, con un formato como «01234567-L».
+ * Post: Escribe «nifAEscribir» en pantalla, con un formato como «01234567-L».
  *       También ha modificado el carácter de relleno que utiliza el manipulador
  *       «setw», estableciendo el espacio en blanco.
  */
