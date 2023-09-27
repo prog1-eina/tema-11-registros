@@ -40,8 +40,7 @@ int main() {
         mostrar(nifUsuario);
         cout << " es válido" << endl;
         return 0;
-    }
-    else {
+    } else {
         cout << "El NIF no es válido." << endl;
         return 1;
     }

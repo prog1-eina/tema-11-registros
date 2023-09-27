@@ -29,8 +29,7 @@ void mostrar(const Persona p) {
     cout << "Nacido/a el "; mostrar(p.nacimiento); cout << endl;
     if (p.estaCasada) {
         cout << "Casado/a" << endl;
-    }
-    else {
+    } else {
         cout << "Soltero/a" << endl;
     }
 }
