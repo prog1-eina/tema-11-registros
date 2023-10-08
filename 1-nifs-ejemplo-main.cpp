@@ -4,18 +4,16 @@
  * Última revisión: 12 de noviembre de 2020
  * Resumen: Programa de ejemplo de uso de los recursos definidos en el módulo
  *          «nif»
- * Nota: El código de esta versión está repartido en varios módulos. Para
- *       compilarlo, hay que ejecutar el comando
- *           make nifs
- *       o, en Windows,
- *           mingw32-make nifs
- *       o ejecutar la tarea "Compilar programa «nifs»" de VSC.
- * 
- *       Para ejecutarlo, una vez compilado, hay que ejecutar el comando
- *           ./nifs
- *       o, en Windows,
- *           .\nifs.exe
- *       o ejecutar la tarea "Ejecutar programa «nifs»" de VSC.
+ * Nota: El código de esta versión está repartido en varios módulos. Para
+ *       compilarlo, hay que ejecutar el comando
+ *           make nifs
+  *       o ejecutar la tarea "Compilar programa «nifs»" de VSC.
+ * 
+ *       Para ejecutarlo, una vez compilado, hay que ejecutar el comando
+ *           ./nifs
+ *       o, en Windows,
+ *           .\nifs.exe
+ *       o ejecutar la tarea "Ejecutar programa «nifs»" de VSC.
 \******************************************************************************/
 
 #include <iostream>

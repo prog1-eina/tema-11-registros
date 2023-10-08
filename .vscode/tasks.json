@@ -10,9 +10,6 @@
             "label": "Compilar programa «personas»",
             "type": "shell",
             "command": "make",
-            "windows": {
-                "command": "mingw32-make.exe"
-            },
             "args": [
                 "personas"
             ],
@@ -40,9 +37,6 @@
             "label": "Compilar programa «nifs»",
             "type": "shell",
             "command": "make",
-            "windows": {
-                "command": "mingw32-make.exe"
-            },
             "args": [
                 "nifs"
             ],

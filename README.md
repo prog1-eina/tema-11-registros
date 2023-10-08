@@ -6,44 +6,36 @@ El código está estructurado en los módulos principales de dos programas (`1-n
 
 ## `1-nifs-ejemplo-main`
 
-Para compilarlo, hay que ejecutar el comando
+Para compilarlo, hay que ejecutar el comando
     
-    make nifs
+    make nifs
 
-o, en Windows,
+o ejecutar la tarea ``Compilar programa «nifs»`` de VSC.
 
-    mingw32-make nifs
-
-o ejecutar la tarea ``Compilar programa «nifs»`` de VSC.
-
-Para ejecutarlo, una vez compilado, hay que ejecutar el comando
+Para ejecutarlo, una vez compilado, hay que ejecutar el comando
 
     ./nifs
 
-o, en Windows,
+o, en Windows,
 
     .\nifs.exe
 
-o ejecutar la tarea ``Ejecutar programa «nifs»`` de VSC.
+o ejecutar la tarea ``Ejecutar programa «nifs»`` de VSC.
 
 ## `2-personas-ejemplo-main`
 
-Para compilarlo, hay que ejecutar el comando
+Para compilarlo, hay que ejecutar el comando
     
     make personas
 
-o, en Windows,
+o ejecutar la tarea ``Compilar programa «personas»`` de VSC.
 
-    mingw32-make personas
-
-o ejecutar la tarea ``Compilar programa «personas»`` de VSC.
-
-Para ejecutarlo, una vez compilado, hay que ejecutar el comando
+Para ejecutarlo, una vez compilado, hay que ejecutar el comando
 
     ./personas
 
-o, en Windows,
+o, en Windows,
 
     .\personas.exe
 
-o ejecutar la tarea ``Ejecutar programa «personas»`` de VSC.
+o ejecutar la tarea ``Ejecutar programa «personas»`` de VSC.
