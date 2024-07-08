@@ -33,7 +33,7 @@ unsigned componer(const Fecha f) {
 /*
  * Pre:  Los valores de los parámetros «f1» y «f2» representan fechas válidas 
  *       del calendario gregoriano.
- * Post: Devuelve true si y solo si la fecha representada por el valor
+ * Post: Devuelve «true» si y solo si la fecha representada por el valor
  *       del parámetro «f1» es cronológicamente anterior a la representada por
  *       «f2».
  */
