@@ -1,4 +1,4 @@
-/******************************************************************************\
+/******************************************************************************
  * Curso de Programación 1. Tema 11 (Registros)
  * Autores: Miguel Ángel Latre
  * Última revisión: 12 de noviembre de 2020
@@ -14,7 +14,7 @@
  *       o, en Windows,
  *           .\personas.exe
  *       o ejecutar la tarea "Ejecutar programa «personas»" de VSC.
-\******************************************************************************/
+ *****************************************************************************/
 
 #include <iostream>
 #include "persona.hpp"

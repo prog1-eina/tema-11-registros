@@ -1,9 +1,9 @@
-﻿/******************************************************************************\
+﻿/******************************************************************************
  * Curso de Programación 1. Tema 11 (Registros)
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 12 de noviembre de 2020
  * Resumen: Fichero de implementación «persona.cpp» del módulo «persona».
-\******************************************************************************/
+ *****************************************************************************/
 
 #include "persona.hpp"
 #include <iostream>

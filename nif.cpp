@@ -1,9 +1,9 @@
-﻿/******************************************************************************\
+﻿/******************************************************************************
  * Curso de Programación 1. Tema 11 (Registros)
  * Autores: Miguel Ángel Latre y Javier Martínez
  * Última revisión: 20 de octubre de 2023
  * Resumen: Fichero de implementación «nif.cpp» del módulo «nif».
-\******************************************************************************/
+ *****************************************************************************/
 
 #include "nif.hpp"
 #include <cctype>
@@ -34,9 +34,9 @@ bool esValido(const Nif nifAValidar) {
 
 /*
  * Pre:  El valor del parámetro «nifAEscribir» representa un NIF válido.
- * Post: Escribe «nifAEscribir» en pantalla, con un formato como «01234567-L».
- *       También modifica el carácter de relleno que utiliza el manipulador «setw»,
- *       estableciendo el espacio en blanco.
+ * Post: Escribe «nifAEscribir» en pantalla, con formato «01234567-L». Además,
+ *       modifica el carácter de relleno del manipulador «setw», estableciendo
+ *       el espacio en blanco.
  */
 void mostrar(const Nif nifAEscribir) {
     cout << setfill('0');
